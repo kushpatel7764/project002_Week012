@@ -44,7 +44,28 @@ public class Main {
         // Final array is returned 
         return sortArray;
     }
-
+    /*
+    public static String selectionSort(double[] sortArray){
+        int smallIndex = 0;
+        String output = "";
+        for(int i = 0; i < (sortArray.length - 1); i++){ //one change -1
+            double minval = sortArray[i];
+            for(int j = i + 1; j < sortArray.length; j++){ //one change +1
+                if (minval > sortArray[j]){
+                    minval = sortArray[j];
+                    smallIndex = j;
+                }
+            }
+        double holder = sortArray[i];
+            sortArray[i] = minval;
+            sortArray[smallIndex] = holder;
+        }
+        for(int i = 0; i < sortArray.length; i++){
+            output += sortArray[i] + " ";
+        }
+        return output;
+    }
+    */
 
 }
 
